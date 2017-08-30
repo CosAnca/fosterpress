@@ -1,0 +1,23 @@
+/*
+Theme Name:         FosterPress
+Description:        FosterPress is a WordPress starter theme based on FoundationPress by Ole Fredrik Lie
+Version:            1.0.0
+Author:             Cos Anca
+
+License:            MIT License
+License URI:        http://www.opensource.org/licenses/mit-license.php
+
+Text Domain:        fosterpress
+*/
+
+/* ----------------------------------------------------------------------------
+
+  Unfortunately WordPress will require a style.css file
+  located in the theme's root folder for stuff to work.
+
+  However, we will not be using vanilla CSS. We're using Sass.
+
+  If you for some reason would like to write plain css instead of using Sass,
+  you could just enqueue this file (style.css) to the header and add your styles in this file
+
+---------------------------------------------------------------------------- */
