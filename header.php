@@ -2,7 +2,7 @@
 /**
  * The template for displaying the header
  *
- * Displays all of the head element and everything up until the "container" div.
+ * Displays all of the head element and everything up until the "site-content" div.
  *
  * @package FosterPress
  * @since FosterPress 1.0.0
@@ -16,18 +16,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<?php wp_head(); ?>
 	</head>
+
 	<body <?php body_class(); ?>>
 
-	<header class="c-site-header" role="banner">
+		<header class="c-site-header" role="banner">
 
-		<nav class="site-navigation top-bar" role="navigation">
-			<div class="top-bar-left">
-				<div class="site-desktop-title top-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+			<nav class="site-navigation top-bar" role="navigation">
+				<div class="top-bar-left">
+					<div class="site-desktop-title top-bar-title">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					</div>
 				</div>
-			</div>
-		</nav>
-		
-	</header>
+			</nav>
+			
+		</header>
 
-	<section class="container">
+		<div class="site-content">
