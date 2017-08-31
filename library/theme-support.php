@@ -32,18 +32,8 @@ function fosterpress_theme_support() {
 	// RSS thingy
 	add_theme_support( 'automatic-feed-links' );
 
-	// Add post formats support: http://codex.wordpress.org/Post_Formats
-	add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat') );
-
-	// Declare WooCommerce support per http://docs.woothemes.com/document/third-party-custom-theme-compatibility/
-	add_theme_support( 'woocommerce' );
-	// Additional theme support for woocommerce 3.0.+
-    add_theme_support( 'wc-product-gallery-zoom' );
-    add_theme_support( 'wc-product-gallery-lightbox' );
-    add_theme_support( 'wc-product-gallery-slider' );
-
 	// Add foundation.css as editor style https://codex.wordpress.org/Editor_Style
-	add_editor_style( 'assets/stylesheets/foundation.css' );
+	add_editor_style( 'assets/style/style.css' );
 }
 
 add_action( 'after_setup_theme', 'fosterpress_theme_support' );
