@@ -10,11 +10,11 @@
 
 ?>
 
-<header class="page-header">
-	<h1 class="page-title"><?php _e( 'Nothing Found', 'fosterpress' ); ?></h1>
+<header class="c-page-header">
+	<h1 class="c-page-title"><?php _e( 'Nothing Found', 'fosterpress' ); ?></h1>
 </header>
 
-<div class="page-content">
+<div class="c-page-content">
 	<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
 	<p>

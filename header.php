@@ -21,14 +21,10 @@
 
 		<header class="c-site-header" role="banner">
 
-			<nav class="site-navigation top-bar" role="navigation">
-				<div class="top-bar-left">
-					<div class="site-desktop-title top-bar-title">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-					</div>
-				</div>
+			<nav class="c-site-navigation" role="navigation">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 			</nav>
 			
 		</header>
 
-		<div class="site-content">
+		<div class="c-site-content">

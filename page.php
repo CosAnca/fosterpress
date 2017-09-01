@@ -19,9 +19,9 @@
  <?php while ( have_posts() ) : the_post(); ?>
 	<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
 		<header>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
+			<h1 class="c-entry-title"><?php the_title(); ?></h1>
 		</header>
-		<div class="entry-content">
+		<div class="c-entry-content">
 			<?php the_content(); ?>
 			<?php edit_post_link( __( '(Edit)', 'fosterpress' ), '<span class="edit-link">', '</span>' ); ?>
 		</div>

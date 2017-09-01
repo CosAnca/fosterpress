@@ -12,7 +12,7 @@ get_header(); ?>
 
 <article <?php post_class('main-content') ?> id="search-results">
 	<header>
-	    <h1 class="entry-title"><?php _e( 'Search Results for', 'fosterpress' ); ?> "<?php echo get_search_query(); ?>"</h1>
+	    <h1 class="c-entry-title"><?php _e( 'Search Results for', 'fosterpress' ); ?> "<?php echo get_search_query(); ?>"</h1>
 	</header>
 
 	<?php if ( have_posts() ) : ?>
