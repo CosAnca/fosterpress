@@ -17,6 +17,9 @@
 /** Various clean up functions */
 require_once( 'library/cleanup.php' );
 
+/** Cache busting */
+require_once( 'library/cache-busting.php' );
+
 /** Enqueue scripts */
 require_once( 'library/enqueue-scripts.php' );
 
@@ -25,6 +28,3 @@ require_once( 'library/entry-meta.php' );
 
 /** Add theme support */
 require_once( 'library/theme-support.php' );
-
-/** If your site requires protocol relative url's for theme assets, uncomment the line below */
-// require_once( 'library/class-fosterpress-protocol-relative-theme-assets.php' );
