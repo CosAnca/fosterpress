@@ -11,31 +11,31 @@
 ?>
 
 <header class="c-page-header">
-	<h1 class="c-page-title"><?php _e( 'Nothing Found', 'fosterpress' ); ?></h1>
+  <h1 class="c-page-title"><?php _e( 'Nothing Found', 'fosterpress' ); ?></h1>
 </header>
 
 <div class="c-page-content">
-	<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
+  <?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
-	<p>
-		<?php
-			/* translators: %1$s: new post url */
-			printf( __(
-				'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'fosterpress' ),
-				admin_url( 'post-new.php' )
-			);
-		?>
-	</p>
+  <p>
+    <?php
+      /* translators: %1$s: new post url */
+      printf( __(
+        'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'fosterpress' ),
+        admin_url( 'post-new.php' )
+      );
+    ?>
+  </p>
 
-	<?php elseif ( is_search() ) : ?>
+  <?php elseif ( is_search() ) : ?>
 
-	<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'fosterpress' ); ?></p>
-	<?php get_search_form(); ?>
+  <p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'fosterpress' ); ?></p>
+  <?php get_search_form(); ?>
 
-	<?php else : ?>
+  <?php else : ?>
 
-	<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'fosterpress' ); ?></p>
-	<?php get_search_form(); ?>
+  <p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'fosterpress' ); ?></p>
+  <?php get_search_form(); ?>
 
-	<?php endif; ?>
+  <?php endif; ?>
 </div>

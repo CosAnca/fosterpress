@@ -8,9 +8,9 @@
 
 ?>
 
-		</div>
-		<footer class="c-site-footer"></footer>
+    </div>
+    <footer class="c-site-footer"></footer>
 
-		<?php wp_footer(); ?>
-	</body>
+    <?php wp_footer(); ?>
+  </body>
 </html>
