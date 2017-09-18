@@ -22,7 +22,7 @@ if ( ! function_exists( 'fosterpress_scripts' ) ) :
     // wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), '3.2.1', true );
 
     // Enqueue the main JavaScript
-    wp_enqueue_script( 'main-functionality', get_template_directory_uri() . get_asset_path('/js/app.js'), array(), null, true );
+    wp_enqueue_script( 'main-functionality', get_template_directory_uri() . get_asset_path('js/app.js'), array(), null, true );
 
     // Add the comment-reply library on pages where it is necessary
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
