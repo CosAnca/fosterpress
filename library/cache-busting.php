@@ -9,11 +9,12 @@ function get_asset_path( $filename ) {
 
   // Cache the decoded manifest so that we only read it in once.
   static $manifest = null;
+
   if ( null === $manifest ) {
     $active_theme_slug = get_template();
-    $manifest_path = 'wp-content/themes/' . $active_theme_slug . '/assets/rev-manifest.json';
+    $manifest_path = ABSPATH . 'wp-content/themes/' . $active_theme_slug . '/assets/rev-manifest.json';
     $manifest = file_exists( $manifest_path )
-      ? json_decode( file_get_contents( $manifest_path ), true )
+      ? json_decode( file_get_contents( $manifest_path ), FILE_USE_INCLUDE_PATH )
       : [];
   }
 
