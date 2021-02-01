@@ -13,7 +13,7 @@ if ( ! function_exists( 'fosterpress_scripts' ) ) :
   function fosterpress_scripts() {
 
     // Enqueue the main Stylesheet.
-    wp_enqueue_style( 'main-stylesheet', get_template_directory_uri() . get_asset_path('style/style.css'), array(), null, false );
+    wp_enqueue_style( 'main-stylesheet', get_template_directory_uri() . get_asset_path('css/styles.css'), array(), null, false );
 
     // Deregister the jquery version bundled with WordPress.
     wp_deregister_script( 'jquery' );

@@ -32,8 +32,8 @@ function fosterpress_theme_support() {
   // RSS thingy
   add_theme_support( 'automatic-feed-links' );
 
-  // Add foundation.css as editor style https://codex.wordpress.org/Editor_Style
-  add_editor_style( 'assets/style/style.css' );
+  // Add styles.css as editor style https://codex.wordpress.org/Editor_Style
+  add_editor_style( 'assets/css/styles.css' );
 }
 
 add_action( 'after_setup_theme', 'fosterpress_theme_support' );
